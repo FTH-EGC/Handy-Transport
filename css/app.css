@@ -30,10 +30,12 @@ img {
 }
 @media (min-width: 768px) {
   .contenedor {
+    width: 95%;
     max-width: 1200px;
     margin: 0 auto;
   }
 }
+
 
 /* Boton */
 .boton a {
@@ -75,7 +77,7 @@ img {
   background-image: url(../img/slide1.jpg);
   background-position: center center;
   background-size: cover;
-  height: 100vh;
+  height: 130vh;
   color: #ffffff;
 }
 .hero .transparency {
@@ -84,8 +86,18 @@ img {
 }
 .transparency {
   background-color: rgba(0, 0, 0, 0.6);
-  height: 100vh;
+  height: 130vh;
 }
+
+@media (min-width:768px){
+  .hero{
+    height: 100vh;
+  }
+  .transparency{
+    height: 100vh;
+  }
+}
+
 /* Contenido hero */
 
 .contenido-hero {
@@ -123,8 +135,15 @@ img {
   margin: 1rem 0 2rem 0;
 }
 .header {
-  padding-top: 2rem;
+  padding: 2rem 0;
 }
+
+@media (min-width: 768px){
+  .header{
+    padding: 2rem 0 0 0;
+  }
+}
+
 
 /* Header */
 .header .contenedor {
@@ -159,6 +178,7 @@ img {
 }
 
 .navegacion a {
+  text-align: center;
   color: #ffffff;
   text-decoration: none;
   font-size: 1.2rem;
@@ -216,12 +236,8 @@ img {
   flex-direction: column;
   align-items: center;
   margin-bottom: 2rem;
-  max-width: 23rem;
-  height: 25rem;
+  text-align: justify;
   padding: 2rem 1rem;
-}
-.info-card {
-  margin-bottom: 7rem;
 }
 @media (min-width: 768px) {
   .card-nosotros {
@@ -340,18 +356,17 @@ img {
 /* Descargas */
 .descargas ul li p {
   margin: 0 0 0.5rem 0;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
 }
 
 .descargas h3 {
   margin: 0.5rem 0;
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-align: center;
 }
 
-.botones-descargas img {
-  width: 7rem;
-}
 .botones-descargas {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -376,6 +391,7 @@ img {
 .negro {
   background-color: #000000;
 }
+
 
 
 .necesitas-ayuda {
@@ -514,7 +530,7 @@ img {
   .quienes-somos .contenedor{
     display: grid;
     grid-template-columns: repeat(3,auto);
-    column-gap: 1rem;
+    column-gap: 1.5rem;
   }
   .imagenes-nosotros .imagen1{
     grid-column: 1/2;
@@ -631,6 +647,33 @@ img {
     margin: 0;
   }
 }
+
+.datos-direccion{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px){
+  .datos-direccion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.info-dato{
+  display: flex;
+  align-items: center;
+}
+.info-dato i{
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.dato p{
+  font-weight: 700;
+}
+
 .mapa-grande{
     margin-bottom: 3rem;
 }
